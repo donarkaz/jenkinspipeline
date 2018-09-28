@@ -21,6 +21,10 @@ pipeline {
                     archiveArtifacts artifacts: '**/target/*.war'
 
                 }
+                failure {
+                    echo 'Ive failed to Archive'
+
+                }
 
             }
 
